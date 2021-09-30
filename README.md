@@ -1,16 +1,6 @@
 # 2020_tree
 
 please contribute here for free
-if you contribute we will gave you pi, because we have 1000 pi 
+if you contribute we will appreciate your effort of contributing
 
-
-Good Repository to contribute
-
-
-Good for developers
-
-Nice Opportunity for developers to showcase their skills
-
-we will be back soon college.
-
-great repository
+it is simple HTML project with some CSS design.
