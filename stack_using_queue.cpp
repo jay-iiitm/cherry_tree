@@ -85,3 +85,38 @@ int main()
     cout<<s.top()<<'\n';
 
 }
+
+
+class Solution {
+public:
+    vector<int> sortEvenOdd(vector<int>& nums) {
+      int n=nums.size();
+        vector<int>o;
+        vector<int>e;
+        for(int i=0;i<n;i+=2)
+        {
+            e.push_back(nums[i]);
+           
+        }
+        for(int j=1;j<n;j+=2)
+        {
+         o.push_back(nums[j]);
+        }
+        sort(e.begin(),e.end());
+        sort(o.begin(),o.end(),greater<>());
+        vector<int>res(n,0);
+        int k=0;
+        for(int i=0;i<n;i+=2)
+        {
+            res[i]=e[k];
+            k++;
+        }
+         k=0;
+        for(int j=1;j<n;j+=2)
+        {
+            res[j]=o[k];
+            k++;
+        }
+        return res;
+    }
+};
